@@ -2,7 +2,7 @@ const multer = require('multer')
 const path = require('path')
 const storage = multer.diskStorage({
 
-  destination: (req, file, cb) => cb(null, 'backend/uploads'), // Folder location
+  destination: (req, file, cb) => cb(null, 'uploads'), // Folder location
   filename: (req, file, cb) => {
     const ext = path.extname(file.originalname)
     const fileName = "note" + Date.now() + ext
