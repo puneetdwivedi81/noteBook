@@ -1,234 +1,78 @@
-const Reviews = () => {
-    return (
-        <section className="">
-            <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-                <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                    Read trusted reviews from our customers
-                </h2>
+import React from "react";
 
-                <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-                    <blockquote className="rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
-                        <div className="flex items-center gap-4">
-                            <img
-                                alt=""
-                                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                                className="size-14 rounded-full object-cover"
-                            />
+function Reviews() {
 
-                            <div>
-                                <div className="flex justify-center gap-0.5 text-rose-500">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                </div>
+  // ✅ Realistic reviews for your Notebook project
+  const reviewsData = [
+    {
+      name: "Aman Verma",
+      image:
+        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
+      message:
+        "The Create My Notebook app is very useful. I like how login is required before creating notes, which keeps my data secure and organized.",
+    },
+    {
+      name: "Sneha Sharma",
+      image:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+      message:
+        "Public and private notes feature is amazing! I can share useful notes publicly while keeping personal notes private.",
+    },
+    {
+      name: "Rahul Singh",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      message:
+        "Clean UI and smooth experience. The contact us section works perfectly and the authentication system feels professional.",
+    },
+  ];
 
-                                <p className="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
-                            </div>
-                        </div>
+  return (
+    <section className="bg-white py-12">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-10">
+          What Users Say About Create My Notebook
+        </h2>
 
-                        <p className="mt-4 text-gray-700">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-                            error officiis atque voluptates magnam!
-                        </p>
-                    </blockquote>
+        <div className="grid gap-8 md:grid-cols-3">
+          {reviewsData.map((review, index) => (
+            <blockquote
+              key={index}
+              className="p-6 bg-gray-50 rounded-xl shadow"
+            >
+              <p className="text-gray-600 mb-4">{review.message}</p>
 
-                    <blockquote className="rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
-                        <div className="flex items-center gap-4">
-                            <img
-                                alt=""
-                                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                                className="size-14 rounded-full object-cover"
-                            />
+              {/* ⭐ Stars */}
+              <div className="flex text-yellow-400 mb-4">
+                {Array(5)
+                  .fill()
+                  .map((_, i) => (
+                    <svg
+                      key={i}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-5 h-5"
+                    >
+                      <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.401 8.168L12 18.897l-7.335 3.869 1.401-8.168L.132 9.211l8.2-1.193z" />
+                    </svg>
+                  ))}
+              </div>
 
-                            <div>
-                                <div className="flex justify-center gap-0.5 text-rose-500">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                </div>
-
-                                <p className="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
-                            </div>
-                        </div>
-
-                        <p className="mt-4 text-gray-700">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-                            error officiis atque voluptates magnam!
-                        </p>
-                    </blockquote>
-
-                    <blockquote className="rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
-                        <div className="flex items-center gap-4">
-                            <img
-                                alt=""
-                                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                                className="size-14 rounded-full object-cover"
-                            />
-
-                            <div>
-                                <div className="flex justify-center gap-0.5 text-rose-500">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="size-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                        />
-                                    </svg>
-                                </div>
-
-                                <p className="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
-                            </div>
-                        </div>
-
-                        <p className="mt-4 text-gray-700">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-                            error officiis atque voluptates magnam!
-                        </p>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-    )
+              <div className="flex items-center gap-3">
+                <img
+                  src={review.image}
+                  alt={review.name}
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <span className="font-semibold">{review.name}</span>
+              </div>
+            </blockquote>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Reviews
+export default Reviews;

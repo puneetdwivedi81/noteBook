@@ -25,7 +25,7 @@ const Home = () => {
             <Reviews />
             <div className="mx-auto py-6 max-w-md">
                 <strong className="block text-center text-xl font-bold text-gray-900 sm:text-3xl">
-                    Subscribe now for ore Updates
+                    Subscribe now for  Updates
                 </strong>
 
                 <form className="mt-6 px-6">

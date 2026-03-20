@@ -23,6 +23,7 @@ app.get("/", (req, res) => {
     res.send("Welcome to MyNoteBook App")
 })
 
+
 app.use("/api/v3.2/auth", require('./router/auth.router'))
 
 app.use("/api/v3.2/note", require('./router/note.router'))
